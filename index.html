@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Para ti mi princesa ❤️</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <!-- PANTALLA DE INICIO -->
+
+    <section id="inicio" class="pantalla">
+
+        <div class="contenido">
+
+            <div class="corazon">❤️</div>
+
+            <h1>Hola, mi vida</h1>
+
+            <p>
+                Tengo una sorpresa preparada especialmente para ti.
+            </p>
+
+            <button onclick="mostrarSeccion('cumple')">
+                💌 Abrir sorpresa
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CUMPLEAÑOS -->
+
+    <section id="cumple" class="pantalla oculta">
+
+        <div class="contenido">
+
+            <div class="emoji">🎂</div>
+
+            <h1>¡Feliz cumpleaños mi niña !</h1>
+
+            <p>
+                Hoy celebramos un dia muy especial en mi vida, tu cumpleaños mi princesa sabes que te amo mucho y espero que te la pases muy bien hoy en tu dia especial!!
+            </p>
+
+            <button onclick="mostrarSeccion('recuerdos')">
+                📸 Ver nuestros recuerdos
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RECUERDOS -->
+
+    <section id="recuerdos" class="pantalla oculta">
+
+        <div class="contenido">
+
+            <h2>📸 Nuestros recuerdos</h2>
+
+            <p>
+                Cada fotografía guarda un momento especial que emos pasado y 
+                que quiero recordar contigo.
+            </p>
+
+            <div class="galeria">
+
+                <img src="fotos/foto1.jpg.png">
+
+                <img src="fotos/foto2.jpg.jpeg">
+
+                <img src="fotos/foto3.jpg.jpeg">
+
+                <img src="fotos/foto4.jpg.png">
+
+                <img src="fotos/foto5.jpg.jpeg">
+
+                <img src="fotos/foto6.jpg.jpeg">
+
+            </div>
+
+            <button onclick="mostrarSeccion('historia')">
+                ❤️ Nuestra historia
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- HISTORIA -->
+
+    <section id="historia" class="pantalla oculta">
+
+        <div class="contenido">
+
+            <h2>❤️ Nuestra historia</h2>
+
+            <div class="historia">
+
+                <div>
+                    <h3>El comienzo</h3>
+
+                    <p>
+                        Nuestra linda historia comenzo el dia 19 de Octubre exactamente hace un año jaja parece que fue ayer, este año que llevamos juntos emos pasado tantas cosas juntos risas, enojos, disculpas, muchos besos, pero a pesar de los malos momentos siempre as estado
+                        para mi a pesar de mis actitudes y malas decisiones pero nunca me as dejado solo y por todo eso te amo muchisimo mas de lo que imaginas mi cachetona...
+                    </p>
+                </div>
+
+
+                <div>
+                    <h3>Nuestro primer recuerdo</h3>
+
+                    <p>
+                        Uno de los recuerdos mas bonitos que tenemos es la primera ves que vi como tus lindos ojos brillaban al verme.
+                    </p>
+                </div>
+
+
+                <div>
+                    <h3>Todos nuestros momentos</h3>
+
+                    <p>
+                        Todas las risas, salidas y
+                        conversaciones que hemos compartido.
+                    </p>
+                </div>
+
+            </div>
+
+            <button onclick="mostrarSeccion('aniversario')">
+                💕 Nuestro primer año
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ANIVERSARIO -->
+
+    <section id="aniversario" class="pantalla oculta">
+
+        <div class="contenido">
+
+            <div class="numero">1</div>
+
+            <h1>Un año juntos ❤️</h1>
+
+            <p>
+               18 de Octubre del 2025
+            </p>
+
+        <div class="fecha">
+    Desde que comenzó nuestra historia ❤️
+</div>
+
+<div class="contador">
+
+    <div>
+        <span id="dias">0</span>
+        <small>Días</small>
+    </div>
+
+    <div>
+        <span id="horas">0</span>
+        <small>Horas</small>
+    </div>
+
+    <div>
+        <span id="minutos">0</span>
+        <small>Minutos</small>
+    </div>
+
+    <div>
+        <span id="segundos">0</span>
+        <small>Segundos</small>
+    </div>
+
+</div>
+
+            <div class="tarjeta">
+
+                <p>
+                    Ha pasado un año desde que comenzamos
+                    esta historia y todavía tenemos
+                    muchísimos momentos por vivir.
+                </p>
+
+            </div>
+
+            <button onclick="mostrarSeccion('carta')">
+                💌 Tengo algo que decirte
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CARTA -->
+
+    <section id="carta" class="pantalla oculta">
+
+        <div class="contenido">
+
+            <h2>💌 Una carta para ti</h2>
+
+            <div id="sobre"
+                 class="sobre"
+                 onclick="abrirCarta()">
+
+                💌
+
+            </div>
+
+
+            <div id="textoCarta"
+                 class="carta oculta">
+
+                <p>
+                    Mi amor:
+                </p>
+
+                <br>
+
+                <p>
+                    Quiero aprovechar este momento para
+                    decirte todo lo que significas para mí.
+                </p>
+
+                <br>
+
+                <p>
+                   Hola mi vida sabes que te amo muchisimo, espero que hoy en este dia especial te la estes pasando de maravilla te deseo un hermoso feliz cumpleaños
+                   , espero que te aigan gustado estoes pequeños que te di se que no es todo lo que te mereces pero quiero que sepas que te lo di con todo mi amor. Tambien quiero agradecerte por 
+                   este año juntos que a pesar de todos nuestros malos y tambien buenos momentos emos seguido juntos queriendonos muchisimo, te amo demasiodo mi princesa 
+                   espero que cumplas muchos mas y nuestra hitoria juntos muchos mas años te amoo mi cachetona
+                </p>
+
+                <br>
+
+                <p>
+                    Gracias por formar parte de mi vida.
+                </p>
+
+                <br>
+
+                <p>
+                    ❤️ Te quiero muchísimo ❤️
+                </p>
+
+            </div>
+
+
+            <button onclick="mostrarSeccion('final')">
+                🎁 Última sorpresa
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section id="final" class="pantalla oculta">
+
+        <div class="contenido">
+
+            <div id="regalo"
+                 class="regalo"
+                 onclick="abrirRegalo()">
+
+                🎁
+
+            </div>
+
+            <h2>Hay algo más...</h2>
+
+            <p>
+                Toca el regalo.
+            </p>
+
+
+            <div id="mensajeFinal"
+                 class="mensaje-final oculta">
+
+                <h1>
+                    ❤️ Feliz cumpleaños ❤️
+                </h1>
+
+                <h2>
+                    Feliz primer aniversario
+                </h2>
+
+                <p>
+                    Gracias por compartir conmigo
+                    este primer año.
+                </p>
+
+                <br>
+
+                <p>
+                    Espero que esta historia
+                    apenas esté comenzando.
+                </p>
+
+                <br>
+
+                <strong>
+                    Con mucho cariño,
+                    <br>
+                    MIRANDA
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CORAZONES -->
+
+    <div id="corazones"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
